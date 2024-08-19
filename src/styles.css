@@ -8,8 +8,16 @@
 
 :root {
   --font: 'Minecraft', 'sans-serif';
-  --color: rgb(62, 62, 62);
-  --bg-color: rgb(194, 194, 194);
+  --color: white;
+  --bg-color: #846334;
+}
+
+body {
+  background-image: url(https://preview.redd.it/aubtn77fdr871.png?width=1080&crop=smart&auto=webp&s=9d335dd3c293126b98e430f1ccea40ca247d3fa6);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  min-height: 100vh;
+  background-size: cover;
 }
 
 * {
@@ -22,7 +30,7 @@
 header {
   color: var(--color);
   background-color: var(--bg-color);
-  border-bottom: 2px solid var(--color);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,11 +46,11 @@ header nav {
 
 nav button {
   border: none;
-  color: white;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd76k-uLoF78Xp4IjyM7tmc4RQUrBGJWZSPw&s);
+  color: var(--color);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoN2XoJP0wmkJDsZqp1IBfHkj4yMdMVPG7gw&s);
   background-size: 100px;
   background-position: center;
-  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 0px rgba(52, 29, 0, 0.5);
   cursor: pointer;
   padding: 0.5rem 1rem;
 }
@@ -51,4 +59,82 @@ nav button:active {
   margin-top: 2px;
   margin-left: 2px;
   box-shadow: none;
+}
+
+/* home page */
+.page {
+  padding: 1rem;
+  margin: 1rem;
+  color: var(--color);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-page .content-right {
+  flex: 1;
+}
+
+.home-page h1,
+.home-page h2 {
+  margin-bottom: 0.5rem;
+}
+
+.home-page p {
+  margin-bottom: 2rem;
+}
+
+.home-page ul li {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* menu page */
+.menu-page h1 {
+  margin-bottom: 1rem;
+}
+
+.menu-page h2 {
+  margin-block: 1rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.menu-grid .menu-img {
+  aspect-ratio: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.menu .menu-img img {
+  width: 100%;
+}
+
+/* contact page */
+.contact-page>h1,
+.contact-page h2 {
+  margin-bottom: 0.5rem;
+}
+
+.contact-page>p {
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  margin-left: 1rem;
+}
+
+.contact-details li a {
+  color: var(--color);
 }
